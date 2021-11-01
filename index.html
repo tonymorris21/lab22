@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+
+
+              <div class="col text-center">
+                <h5 id = "cardText" class="card-title">Phone Directory</h5>
+                <form name="contactForm" >
+                  <input placeholder="Contact Name" id="contactName" required ></input>
+                  <input placeholder="Mobile Number" id="contactMobile" required></input>
+                  <input placeholder="Email" id="contactEmail" required></input>
+
+                </form>
+                <div id="error"></div>
+                  <button type="submit" id="addBtn">Add</button>
+              </div>
+
+
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <div class="row">
+      <hr>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <p class="text-center" id="searchBar">Search Contact by Mobile No:<input type="text" id="searchInput" onkeyup="searchByMobile()" placeholder="Search for names.."></p>
+        <div id="notes" class="row container-fluid">
+          <h5 id = "tableHead" class="card-title">Contacts Summary</h5>
+          <table id ="summaryTable">
+            <thead id ="header">
+              <tr>
+                <th id="nameColumn">Name</td>
+                  <th id="mobileColumn">Mobile</td>
+                    <th id="emailColumn">Email</td>
+                    </tr>
+          </thead>
+            <tbody id ="tableBody">
+            </tbody>
+          </table>
+
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+      </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
